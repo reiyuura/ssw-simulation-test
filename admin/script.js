@@ -246,7 +246,6 @@
                 <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${1}">${question.answers[0].text}</button>
                 <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${2}">${question.answers[1].text}</button>
                 <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${3}">${question.answers[2].text}</button>
-                <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="${4}">${question.answers[3].text}</button>
                 </div>
                 <button id="s${question.section}q${question.id}" 
                 type="button" class="list-group-item list-group-item-action bg-success bg-opacity-75 text-white rounded "  disabled>${question.answers[question.keyid].text}
@@ -520,7 +519,6 @@
           <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="1" onclick="setUserAnswer(this)">${question.answers[0].text}</button>
           <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="2" onclick="setUserAnswer(this)">${question.answers[1].text}</button>
           <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="3" onclick="setUserAnswer(this)">${question.answers[2].text}</button>
-          <button id="s${question.section}q${question.id}" type="button" class="list-group-item list-group-item-action" value="4" onclick="setUserAnswer(this)">${question.answers[3].text}</button>
         </div>
         `;
         // <div class="row p-5">
@@ -683,10 +681,6 @@
             <div class="col-lg-3 my-2">
                 <p> Section ${sections[2].id} - ${sections[2].name}:</p>
                 <span class="ms-5"> ${sectionResults[2]} Points</span>
-            </div>
-            <div class="col-lg-3 my-2">
-                <p> Section ${sections[3].id} - ${sections[3].name}:</p>
-                <span class="ms-5"> ${sectionResults[3]} Points</span>
             </div>
           </div>
           <hr>
