@@ -631,7 +631,7 @@
     } 
     const evaluateTest = () => {
         let isPassed=false;
-        let treshold = (currentTest.questions.length-20);
+        let treshold = (currentTest.questions.length-18);
         totalResult = getTotalScore ();
         if(totalResult >= treshold) {
             isPassed=true;
