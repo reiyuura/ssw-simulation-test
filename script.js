@@ -702,7 +702,10 @@
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
         const currentDate = new Date();
-        const day = String(currentDate.getDate()).padStart(2, '0');
+        let day = String(currentDate.getDate()).padStart(2, '0');
+        if(day[0]=='0'){
+            day = day[1]
+        }
         // console.log(users[day]);
         const obj =(users[day].username == username) && (users[day].password == password) ? users[day] : false;
         // const obj = users.find(user => (user.username == username) && (user.password == password));
