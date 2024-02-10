@@ -701,18 +701,18 @@
     const authenthication = () => {
         const username = document.getElementById('username').value;
         const password = document.getElementById('password').value;
-        const currentDate = new Date();
-        let day = String(currentDate.getDate()).padStart(2, '0');
-        if(day[0]=='0'){
-            day = day[1]
-        }
-        // console.log(users[day]);
-        const obj =(users[day].username == username) && (users[day].password == password) ? users[day] : false;
+        // const currentDate = new Date();
+        // let day = String(currentDate.getDate()).padStart(2, '0');
+        // if(day[0]=='0'){
+        //     day = day[1]
+        // }
+        // console.log(users);
+        const obj =(users.username == username) && (users.password == password) ? users : false;
         // const obj = users.find(user => (user.username == username) && (user.password == password));
         // console.log(obj);
         if(!obj) {
-            // username="";
-            // password="";
+            username="";
+            password="";
             alert("username or password is wrong");
             clearMain();
             main.appendChild(createLoginForm());
